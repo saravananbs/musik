@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+
+}
+header{
+    background-image:url(images/HOME.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    padding: 30px 50px 20px 50px;
+    color: white;
+}
+nav{
+    display: flex;
+    margin: 0 40px 0 40px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+.logo{
+    display: flex;
+    height: 40px;
+}
+.logo img{
+    width:37px;
+    filter: hue-rotate(-20deg);
+}
+.logo h3{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.logo h3 a{
+    text-decoration: none;
+    color: white;
+    font-weight:100;
+}
+.navMenu {
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+.navMenu a {
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 18px;
+    height: 25px;
+    margin-bottom: 10px;
+    border-right: 1px solid white;
+    font-weight: 100;
+    text-align: center;
+    display: inline-block;
+    width: 130px;
+    transition: .5s;
+}
+  
+.navMenu a:hover {
+    border-right:1px solidrgb(67, 49, 164);
+}
+  
+.navMenu .dot {
+    width: 6px;
+    height: 6px;
+    background:rgb(50, 34, 140);
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 0.2s ease-in-out;
+}
+  
+.navMenu a:nth-child(1):hover ~ .dot {
+    transform: translateX(65px);
+    transform: translateX(65px);
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+  
+.navMenu a:nth-child(2):hover ~ .dot {
+    transform: translateX(195px);
+    transform: translateX(195px);
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+  
+.navMenu a:nth-child(3):hover ~ .dot {
+    transform: translateX(330px);
+    transform: translateX(330px);
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+.toggle-btn{
+    width: 52px;
+    background-color:none;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+.toggle-btn:hover{
+    background-color:rgb(67, 49, 164);
+}
+.toggle-btn img{
+    width: 30px;
+    position: relative;
+    top: 10px;
+}
+section{
+    height:auto;
+    display: flex;
+
+}
+section .main-img img{
+    width: 40vw;
+    overflow: hidden;
+    position: relative;
+    top: 46px;
+    right: 50px;
+    z-index: 10;
+}
+.content{
+    width: 47vw;
+}
+.content h1{
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 160px;
+    margin-left: 100px;
+    line-height: 100px;
+}
+.content p{
+    font-size: 20px;
+    font-weight: lighter;
+    margin-left: 100px;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.826);
+}
+#author{
+    color:rgb(67, 49, 164);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+.controls{
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    height: 100px;
+    width: 80%;
+    left: 255px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.105);
+}
+.main-controls{
+    margin-left: 40%;
+    display: flex;
+}
+.controls .back img{
+    width: 30px;
+    margin-right: 25px;
+    margin-top: 37px;
+    rotate: 180deg;
+    cursor: pointer;
+}
+.controls .play img{
+    width: 50px;
+    margin-right: 25px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.controls .forward img{
+    width: 30px;
+    margin-top: 37px;
+    cursor: pointer;
+}
+.social{
+    display: flex;
+    padding-top: 35px;
+    margin-left: 150px;
+    border-left: 1px solid white;
+}
+.social a{
+    font-size: 30px;
+    color: white;
+    transition-duration: .5s;
+    margin-left: 100px;
+}
+.social a:hover{
+    font-size: 35px;
+    color: green;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.263);
+}
+.social p{
+    margin-left: 10px;
+    margin-top: 8px;
+    font-size: 18px;
+}
